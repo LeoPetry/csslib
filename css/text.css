@@ -1,0 +1,231 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* a text related reset
+*/
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: block;
+}
+
+ul.default {
+  list-style-type: disc;
+}
+ul.default li {
+  display: list-item;
+}
+
+.logo {
+  font-family: "Domine", serif;
+}
+
+.container {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.logo-container {
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+}
+.logo-container h2 {
+  color: #131e6c;
+}
+
+.bodycopy {
+  color: #173972;
+  line-height: 1.2em;
+}
+
+body > .wrapper {
+  background-color: #196296;
+}
+
+/* Define Font Sizes
+ * $normal set the body font size in pixels
+ * $big , $bigger , $biggest are relative to $normal (values are set in em)
+ */
+/* Define Font Family
+ * $websans defines a webfont family
+ * $bold, $extrabold, $normal, $light
+ * define this weight accordingly to donwloaded fonts
+ */
+/***   text COLOR setup   ***/
+/*
+
+Class documentation
+
+TEXT STYLES
+
+.sans : Declare webfont sans-serif family here - by default html will be displayed as sans-serif (native fonts)
+.serif : A serif font family
+.fout : Use this class to avoid Flash Of Unstyled Text. Hide the element before the webfont is loaded
+.light / .bold / .extrabold : Dependent on webfont. (If no font weights are loaded this class will have no effect)
+
+*/
+/***   FONTS setup   ***/
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 25;
+}
+
+a {
+  color: #885555;
+}
+a:visited {
+  color: #9e3f3f;
+}
+a:focus {
+  color: #9e3f3f;
+}
+a:hover {
+  color: #9e3f3f;
+}
+a:active {
+  color: #9e3f3f;
+}
+
+.sans {
+  font-family: "Istok Web", sans-serif;
+  font-weight: 400;
+}
+
+.sans.bold {
+  font-weight: 700;
+}
+
+.sans.extrabold {
+  font-weight: 700;
+}
+
+.sans.light {
+  font-weight: 400;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.center {
+  text-align: center;
+}
+
+.allcaps {
+  text-transform: uppercase;
+}
+
+.highlight {
+  color: #131e6c;
+}
+
+.biggest {
+  font-size: 4.8em;
+}
+
+.biggest > .bigger {
+  font-size: 1.79167em;
+}
+
+.biggest > .big {
+  font-size: 0.99167em;
+}
+
+.biggest > .normal {
+  font-size: 0.20833em;
+}
+
+.bigger {
+  font-size: 2em;
+}
+
+.bigger > .biggest {
+  font-size: 2.4em;
+}
+
+.bigger > .big {
+  font-size: 0.7em;
+}
+
+.bigger > .normal {
+  font-size: 0.5em;
+}
+
+.big {
+  font-size: 1.2em;
+}
+
+.big > .biggest {
+  font-size: 3.96667em;
+}
+
+.big > .bigger {
+  font-size: 1.16667em;
+}
+
+.big > .normal {
+  font-size: 0.83333em;
+}
+
+.wf-loading .fout, .wf-loading .fout {
+  visibility: hidden;
+}
+
+.wf-active .fout, .wf-active .fout {
+  visibility: visible;
+}

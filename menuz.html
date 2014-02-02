@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Contact page example
+	</title>		
+	<link rel="stylesheet" type="text/css" href="css/menu.css" />
+	<style>
+		.menu-container {
+			width: 340px;
+		}
+		
+		.grid-item a {
+			text-decoration: none;
+			padding: 15px 0 12px;	
+		}
+		
+		.logo {
+			margin-right: 25px;
+			padding-top: 10px; 
+		}
+		
+		a.active {
+			background-color: #FFF;
+		}
+		.home-banner{
+			background-image: url(https://www.fiddlefly.com/img/home-bg.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			padding: 40px 0;
+		}
+		.menuz .menu-item {
+			display: inline-block;
+			padding: 15px 20px;
+		}		
+		.menuz .menu-item.active {
+			background-color: #FFF;
+		}
+	</style>
+</head>
+<body>
+	<div class="header clearfix light-grey">
+		<div class="container">
+			<div class="float-left">
+				<h1 class="logo">
+					<a href=""><img src="https://www.fiddlefly.com/img/logo.png" alt="Fiddlefly" title="fiddlefly" /></a>
+				</h1>
+			</div>
+			<div class="float-left sans menu-container">
+				<div class="menuz center blockitems">
+					<div class="menu-item active">				
+						<a href="">Work</a>					
+					</div>
+					<div class="menu-item">				
+						<a href="">About</a>					
+					</div>
+					<div class="menu-item">				
+						<a href="">Contact</a>					
+					</div>
+					<div class="menu-item">				
+						<a href="">Blog</a>					
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="home-banner">
+		<h2 class="biggest center sans bold allcaps">The Digital Creative Agency</h2>
+		<h3 class="bigger center sans">Where every pixel matters</h3>
+	</div>
+	<div class="container">
+		<br/><h2 class="bigger center allcaps bold sans">We follow our own advice</h2><br/>
+		<p class="big">
+		As a digital creative agency specializing in <span class="highlight">website design and development</span>, 
+		we have created a myriad of powerful, 
+		<span class="highlight">outcome-driven</span> web properties for our clients. 
+		Our own website is no exception. 
+		We have applied our expertise and cutting-edge theories to the Fiddlefly digital experience, 
+		and we think the results speak for themselves.</p>
+	</div>
+	<!--load external font resources-->
+	<script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+	<script>
+	  WebFont.load({
+	    google: {
+	      families: ['Istok+Web:400,700,400italic:latin', 'Domine:700&text=TEXT.SCSS']
+	    }
+	  });
+	</script>
+</body>
+</html>

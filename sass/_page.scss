@@ -1,0 +1,30 @@
+$logo : 'Domine', serif;
+$background : #196296;
+$offcolor : #131E6C;
+
+.logo {
+	font-family: $logo;	
+}
+
+.container {
+	max-width: 840px;
+	margin: 0 auto;
+}
+
+.logo-container {
+	padding-top: 1.2em;
+	padding-bottom: 1.2em;
+	
+	h2 {
+		color : $offcolor;
+	}
+}
+
+.bodycopy {
+	color: #173972;
+	line-height: 1.2em;
+}
+
+body > .wrapper {
+	background-color: $background;
+}

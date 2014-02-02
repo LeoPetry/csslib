@@ -1,0 +1,300 @@
+/*css reset*/
+html {
+	font-family: sans-serif;
+}
+body, div, p, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+
+/***     WEBFONTS setup     ***/
+
+.page-title, .section-title {
+	font-family: 'Istok Web';
+}
+.wf-loading .page-title , .wf-loading .section-title {
+  /* styles to use before webfonts are loaded */
+  visibility: hidden;
+} 
+.wf-active .page-title, .wf-active .section-title {
+  /* styles to use after webfonts are loaded */
+  visibility: visible;
+}
+
+.logo {
+	font-family: 'Domine', serif;
+}
+.wf-loading .logo {
+  /* styles to use before webfonts are loaded */
+  visibility: hidden;
+} 
+.wf-active .logo {
+  /* styles to use after webfonts are loaded */
+  visibility: visible;
+}
+
+
+/*****/
+
+
+
+.page-wrap {
+	max-width: 1280px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+.home-banner {
+	/*background-image: url('images/sprinkles.png');*/
+	background: #191919;
+	background-repeat: repeat;
+	width: 100%;
+	padding-top: 140px;
+	padding-bottom: 45px;
+	margin-top: 85px; /*header height*/
+}
+
+.home-banner-shortnav {
+	margin: 50px auto 0;
+	max-width: 425px;
+}
+.home-banner-shortnav .button-block {
+	color: #FFF;
+	background-color: #272727;
+}
+
+
+
+
+.home-banner-shortnav:after {
+	clear: both;
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	float: none;	
+}
+
+.button-block {
+	display: block;
+	width: 200px;
+	background-color: #979797;
+	border: 1px solid #FFF;
+	padding: 10px 0;
+	text-align: center;
+	margin: 0 auto;
+	box-sizing: border-box;
+	border-radius: 4px;
+	margin-bottom: 25px;
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	background-color: #FFF;
+	top: 0;
+}
+.header .wrapper {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1280px;	
+	padding: 24px;
+	box-sizing: border-box;
+}
+
+.logo {
+	
+}
+
+.logo a {
+	color: #000;
+}
+
+header[role="banner"] nav {
+	float: right;
+}
+header[role="banner"] hgroup {
+	float: left;
+}
+.wrapper:after {
+	display: block;
+	float: none;
+	clear: both;
+	width: 0;
+	height: 0;
+	content: "";
+}
+
+.nav-main-menu {
+	list-style: none;
+	-webkit-margin-before: 1em;
+}
+.nav-main-menu li {
+	float: left;
+	display: block;
+	margin-right: 3.5em;
+}
+.nav-main-menu li:last-child {
+	margin-right: 0;
+}
+.nav-main-menu li a {
+	font-size: 1em;
+}
+
+
+@media (min-width: 450px) {
+
+	.button-block {
+		float: left;
+	}
+	.home-banner-shortnav .button-block:first-child {
+		margin-right: 25px;
+	}
+
+}/*end 450px breakpoint*/
+
+@media (min-width: 740px) {
+
+	.grid2 .griditem {
+		width: 50%;
+	}	
+	
+}/*end 740px breakpoint - ready */
+
+@media (min-width: 1100px) {
+	
+	.section-title {
+		margin-top: 24px;
+	}
+	
+}/*end 1100px breakpoint - ready */
+
+@media (max-width: 805px) {
+
+header[role="banner"]:after {
+	content: "";
+	display: block;
+	width: 25px;
+	height: 25px;
+	border: 1px solid #000;
+	position: absolute;
+	top: 2em;
+	right: 1em;
+}
+
+
+
+header[role="banner"] nav {
+	float: none;
+	position: absolute;
+	top: 85px;
+	background-color: #FFF;
+	right: 0;
+	width: 100%;
+}
+.nav-main-menu li {
+	float: none;
+	border-bottom: 1px solid #CCC;	
+}
+.nav-main-menu li:last-child {
+	margin-right: 3.5em;
+}
+.nav-main-menu li a {
+	padding: 8px 0;
+	display: block;
+}
+
+}/*Close 805 breakpoint*/
+
+
+
+/*
+ *body two column section template
+*/
+
+
+.home-section {
+	margin-top: 42px;	
+}
+
+.home-section:after {
+	content: "";
+	display: block;
+	float: none;
+	clear: both;
+	width: 0;
+	height: 0;
+}
+
+.home-section header {
+	
+}
+
+
+
+.grid2 {
+	
+}
+
+.griditem {
+	width: 100%;
+}
+
+.grid2 .griditem {
+	min-width: 320px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.imgcontainer img {
+	display: block;
+	max-width: 100%;	
+	margin: 0 auto;
+}
+
+
+/*
+* UNIQUE STYLES
+*/
+.daydream-section > div {
+	padding: 0px 24px;
+}
+.daydream-section > header {
+	padding: 24px 24px 0 24px;
+}
+/*
+*
+*/
+
+
+/*
+*
+*/
+.section-title {
+	font-size: 2.5em;
+	line-height: 1.2em;
+}
+
+.section-copy {
+	font-size: 1em;
+	line-height: 1.2em;
+	margin-top: 15px;
+}
+
+.page-title {
+	text-align: center;
+	max-width: 960px;
+	margin: 0 auto;
+	color: #FFF;
+	font-size: 4em;
+}

@@ -1,0 +1,26 @@
+@import "compass/reset";
+
+@function pxtoem($wanted, $inherited) {
+  @return ($wanted / $inherited);
+}
+
+@mixin grid-items($cols,$min) {
+	width: percentage(1/$cols);
+	@if $min {min-width: (320px / $cols);} //set min-width to be iphone screen-size
+}
+
+@mixin grid($i,$minw) {
+	@while $i > 1 {
+	
+		.grid-#{$i}	{
+			
+			.grid-item {
+				float: left;
+				@include grid-items($i, $minw);
+				$i : $i - 1;	
+			}
+			
+		}
+	}
+}
+

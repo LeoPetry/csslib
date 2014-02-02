@@ -1,0 +1,176 @@
+@import "compass/reset";
+@import "_reset.scss";
+@import "_page.scss";
+
+/* Define Font Sizes
+ * $normal set the body font size in pixels
+ * $big , $bigger , $biggest are relative to $normal (values are set in em)
+ */
+$normal : 14; // px
+$biggest : 4.8; // em
+$bigger : 2;  // em
+$big : 1.2;   // em
+
+/* Define Font Family
+ * $websans defines a webfont family
+ * $bold, $extrabold, $normal, $light
+ * define this weight accordingly to donwloaded fonts
+ */
+$websans : 'Istok Web', sans-serif; // set sans font family here
+$bold : 700;
+$extrabold : 700;
+$normal : 400;
+$light : 400;
+
+$serif : serif;
+
+/***   text COLOR setup   ***/
+
+$highlight : #131E6C;
+
+$link : #855;
+$amount : 20%;
+
+// color functions 
+// http://compass-style.org/reference/compass/typography/links/link_colors/
+// http://sass-lang.com/documentation/Sass/Script/Functions.html#mix-instance_method
+
+$link_hover : adjust-saturation($link, $amount);
+$link_active : adjust-saturation($link, $amount);
+$link_visited : adjust-saturation($link, $amount);
+$link_focus : adjust-saturation($link, $amount);
+
+
+/*
+
+Class documentation
+
+TEXT STYLES
+
+.sans : Declare webfont sans-serif family here - by default html will be displayed as sans-serif (native fonts)
+.serif : A serif font family
+.fout : Use this class to avoid Flash Of Unstyled Text. Hide the element before the webfont is loaded
+.light / .bold / .extrabold : Dependent on webfont. (If no font weights are loaded this class will have no effect)
+
+*/
+
+@import "compass/typography/links/link-colors";
+
+@function pxtoem($wanted, $inherited) {
+  @return ($wanted / $inherited);
+}
+
+@function bigtosmall($parent) {
+  @return (1/$parent);
+}
+
+/***   FONTS setup   ***/
+
+
+
+html {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: pxtoem($normal,16);
+	//html font set to 14px default
+}
+
+
+a {
+	@include link-colors($link, $link_hover, $link_active, $link_visited, $link_focus);
+}
+
+.sans {
+	font-family: $websans;
+	font-weight: $normal;
+}
+
+.sans.bold {
+	font-weight: $bold;
+}
+.sans.extrabold {
+	font-weight: $extrabold;
+}
+.sans.light {
+	font-weight: $light;
+}
+
+.italics {
+	font-style: italic;
+}
+
+.center {
+	text-align: center;
+}
+
+.allcaps {
+	text-transform: uppercase;
+}
+
+.highlight {
+	color: $highlight;
+}
+
+.biggest {
+	font-size: $biggest+em;
+}
+
+.biggest > .bigger {
+	font-size: $bigger - bigtosmall($biggest)+em;
+}
+
+.biggest > .big {
+	font-size: $big - bigtosmall($biggest)+em;
+}
+
+
+.biggest > .normal {
+	font-size: bigtosmall($biggest)+em;
+}
+
+
+
+.bigger {
+	font-size: $bigger+em;
+}
+
+.bigger > .biggest {
+	font-size: (bigtosmall($bigger) * $biggest)+em;
+}
+
+.bigger > .big {
+	font-size: ($big - bigtosmall($bigger))+em;
+}
+
+.bigger > .normal {
+	font-size: bigtosmall($bigger)+em;
+}
+
+
+
+.big {
+	font-size: $big+em;
+}
+
+.big > .biggest {
+	font-size: ($biggest - bigtosmall($big))+em;
+}
+
+.big > .bigger {
+	font-size: ($bigger - bigtosmall($big))+em;
+}
+
+.big > .normal {
+	font-size: bigtosmall($big)+em;
+}
+
+
+
+
+.wf-loading .fout , .wf-loading .fout {
+  // styles to use before webfonts are loaded 
+  visibility: hidden;
+} 
+.wf-active .fout, .wf-active .fout {
+  // styles to use after webfonts are loaded 
+  visibility: visible;
+}

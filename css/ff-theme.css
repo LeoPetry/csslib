@@ -1,0 +1,16 @@
+.hero-title {
+  font-family: "Istok Web", sans-serif;
+  font-size: 2em;
+  color: #FFF;
+  text-shadow: 2px 2px 0 black;
+}
+
+.center {
+  text-align: center;
+}
+
+#header {
+  padding: 60px;
+  background-image: url(../images/pattern.png);
+  background-repeat: repeat;
+}

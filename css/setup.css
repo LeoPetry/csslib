@@ -1,0 +1,132 @@
+/* Define Font Sizes
+ * $normal set the body font size in pixels
+ * $big , $bigger , $biggest are relative to $normal (values are set in em)
+ */
+/* Define Font Family
+ * $websans defines a webfont family
+ * $bold, $extrabold, $normal, $light
+ * define this weight accordingly to donwloaded fonts
+ */
+/***   text COLOR setup   ***/
+/*
+
+Class documentation
+
+TEXT STYLES
+
+.sans : Declare webfont sans-serif family here - by default html will be displayed as sans-serif (native fonts)
+.serif : A serif font family
+.fout : Use this class to avoid Flash Of Unstyled Text. Hide the element before the webfont is loaded
+.light / .bold / .extrabold : Dependent on webfont. (If no font weights are loaded this class will have no effect)
+
+*/
+/***   FONTS setup   ***/
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 25;
+}
+
+a {
+  color: #885555;
+}
+a:visited {
+  color: #9e3f3f;
+}
+a:focus {
+  color: #9e3f3f;
+}
+a:hover {
+  color: #9e3f3f;
+}
+a:active {
+  color: #9e3f3f;
+}
+
+.sans {
+  font-family: "Istok Web", sans-serif;
+  font-weight: 400;
+}
+
+.sans.bold {
+  font-weight: 700;
+}
+
+.sans.extrabold {
+  font-weight: 700;
+}
+
+.sans.light {
+  font-weight: 400;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.center {
+  text-align: center;
+}
+
+.allcaps {
+  text-transform: uppercase;
+}
+
+.highlight {
+  color: #3333ff;
+}
+
+.biggest {
+  font-size: 3em;
+}
+
+.biggest > .bigger {
+  font-size: 1.66667em;
+}
+
+.biggest > .big {
+  font-size: 0.86667em;
+}
+
+.biggest > .normal {
+  font-size: 0.33333em;
+}
+
+.bigger {
+  font-size: 2em;
+}
+
+.bigger > .biggest {
+  font-size: 1.5em;
+}
+
+.bigger > .big {
+  font-size: 0.7em;
+}
+
+.bigger > .normal {
+  font-size: 0.5em;
+}
+
+.big {
+  font-size: 1.2em;
+}
+
+.big > .biggest {
+  font-size: 2.16667em;
+}
+
+.big > .bigger {
+  font-size: 1.16667em;
+}
+
+.big > .normal {
+  font-size: 0.83333em;
+}
+
+.wf-loading .fout, .wf-loading .fout {
+  visibility: hidden;
+}
+
+.wf-active .fout, .wf-active .fout {
+  visibility: visible;
+}

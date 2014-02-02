@@ -1,0 +1,23 @@
+@import "_ff.scss";
+
+.hero-title {
+	font-family: $sans;
+	font-size: $bigger+em;
+	color: #FFF;
+	text-shadow: 2px 2px 0 black;
+}
+
+.center {
+	text-align: center;
+}
+
+
+
+
+//generic styles below (discard)
+
+#header {
+	padding: 60px;
+	background-image: url(../images/pattern.png);
+	background-repeat: repeat;
+}

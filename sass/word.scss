@@ -1,0 +1,107 @@
+@import "_helper.scss";
+@import "_setup.scss";
+
+.page {
+	max-width: 800px;
+	padding: 40px;
+	border: 1px solid #333;
+	margin: 20px auto 10px;
+}
+
+.paragraph {
+	font-size: pxtoem($normal,16)+em;
+	color : $textcolor;
+	font-family: $fontstack;	
+}
+
+.emphasis {
+	@extend .paragraph;
+	font-style: italic;
+}
+
+.subtle-emphasis {
+	@extend .emphasis;
+	color: $subtle;
+}
+
+.instense-emphasis {
+	@extend .emphasis;
+	color: $intense;	
+}
+
+
+.normal {
+	@extend .paragraph;
+	
+	line-height: $textspace+em;
+	padding-top : 8px; padding-bottom: 8px;
+}
+
+.no-spacing {
+	@extend .paragraph;
+	
+	line-height: 1em;
+	
+}
+
+.quote {
+	@extend .paragraph;
+	
+	font-style: italic;	
+}
+
+.intense-quote {
+	@extend .quote;
+	
+	padding-left: 40px; padding-right: 40px; padding-bottom: 10px;
+	border-bottom: 2px solid $intense;
+}
+
+.heading {	
+	font-family: $headingfont;
+	color : $titlecolor;
+	margin-bottom: 10px; margin-top: 10px;
+}
+
+.heading1 {
+	@extend .heading;
+	font-size: $biggest+em;
+}
+
+.heading2 {
+	@extend .heading;
+	font-size: $bigger+em;
+}
+
+.heading3 {
+	@extend .heading;
+	font-size: $big+em;
+	border-top: 1px solid $subtle;	
+}
+
+.title {
+	font-family: $titlefont;
+	font-size: $biggest+em;
+	color: $titlecolor;
+}
+
+.subtitle {
+	@extend .title;
+	font-size: $big+em;
+}
+
+.reference {
+	
+}
+
+.subtle-reference {
+	
+}
+
+.instense-reference {
+	
+}
+
+.list-paragraph {
+	
+}
